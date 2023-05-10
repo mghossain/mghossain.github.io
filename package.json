@@ -22,7 +22,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts --openssl-legacy-provider start",
-		"predeploy" : "npm run build",
+		"predeploy" : "yarn run build",
 		"deploy" : "gh-pages -d build",
 		"build": "yarn run react-scripts build",
 		"test": "react-scripts test",
