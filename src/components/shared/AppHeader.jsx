@@ -45,22 +45,27 @@ const AppHeader = () => {
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
-					<div>
-						<Link to="/">
+					<div className='!rotate-45'>
+						<motion.div
+							className="block"
+							whileHover={{ scale: 1.1, rotate: -10}}
+						>
+						<Link to="/" className='!rotate-45 '>
 							{activeTheme === 'dark' ? (
 								<img
 									src={logoDark}
-									className="w-36"
+									className="w-36 !rotate-45"
 									alt="Dark Logo"
 								/>
 							) : (
 								<img
 									src={logoLight}
-									className="w-36"
+									className="w-36 !rotate-45"
 									alt="Dark Logo"
 								/>
 							)}
 						</Link>
+						</motion.div>
 					</div>
 
 					{/* Theme switcher small screen */}
