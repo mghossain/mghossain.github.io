@@ -11,8 +11,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Variable';
 	src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Variable.woff') format('woff'),
-		url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+	url('../fonts/GeneralSans-Variable.woff') format('woff'),
+	url('../fonts/GeneralSans-Variable.ttf') format('truetype');
 	font-weight: 200 700;
 	font-display: swap;
 	font-style: normal;
@@ -25,8 +25,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-VariableItalic';
 	src: url('../fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-VariableItalic.woff') format('woff'),
-		url('../fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+	url('../fonts/GeneralSans-VariableItalic.woff') format('woff'),
+	url('../fonts/GeneralSans-VariableItalic.ttf') format('truetype');
 	font-weight: 200 700;
 	font-display: swap;
 	font-style: italic;
@@ -39,8 +39,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Extralight';
 	src: url('../fonts/GeneralSans-Extralight.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Extralight.woff') format('woff'),
-		url('../fonts/GeneralSans-Extralight.ttf') format('truetype');
+	url('../fonts/GeneralSans-Extralight.woff') format('woff'),
+	url('../fonts/GeneralSans-Extralight.ttf') format('truetype');
 	font-weight: 200;
 	font-display: swap;
 	font-style: normal;
@@ -53,8 +53,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-ExtralightItalic';
 	src: url('../fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
-		url('../fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
+	url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+	url('../fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
 	font-weight: 200;
 	font-display: swap;
 	font-style: italic;
@@ -67,8 +67,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Light';
 	src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Light.woff') format('woff'),
-		url('../fonts/GeneralSans-Light.ttf') format('truetype');
+	url('../fonts/GeneralSans-Light.woff') format('woff'),
+	url('../fonts/GeneralSans-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-display: swap;
 	font-style: normal;
@@ -81,8 +81,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-LightItalic';
 	src: url('../fonts/GeneralSans-LightItalic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-LightItalic.woff') format('woff'),
-		url('../fonts/GeneralSans-LightItalic.ttf') format('truetype');
+	url('../fonts/GeneralSans-LightItalic.woff') format('woff'),
+	url('../fonts/GeneralSans-LightItalic.ttf') format('truetype');
 	font-weight: 300;
 	font-display: swap;
 	font-style: italic;
@@ -95,8 +95,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Regular';
 	src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Regular.woff') format('woff'),
-		url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+	url('../fonts/GeneralSans-Regular.woff') format('woff'),
+	url('../fonts/GeneralSans-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;
@@ -109,8 +109,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Italic';
 	src: url('../fonts/GeneralSans-Italic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Italic.woff') format('woff'),
-		url('../fonts/GeneralSans-Italic.ttf') format('truetype');
+	url('../fonts/GeneralSans-Italic.woff') format('woff'),
+	url('../fonts/GeneralSans-Italic.ttf') format('truetype');
 	font-weight: 400;
 	font-display: swap;
 	font-style: italic;
@@ -123,8 +123,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Medium';
 	src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Medium.woff') format('woff'),
-		url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+	url('../fonts/GeneralSans-Medium.woff') format('woff'),
+	url('../fonts/GeneralSans-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-display: swap;
 	font-style: normal;
@@ -137,8 +137,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-MediumItalic';
 	src: url('../fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-MediumItalic.woff') format('woff'),
-		url('../fonts/GeneralSans-MediumItalic.ttf') format('truetype');
+	url('../fonts/GeneralSans-MediumItalic.woff') format('woff'),
+	url('../fonts/GeneralSans-MediumItalic.ttf') format('truetype');
 	font-weight: 500;
 	font-display: swap;
 	font-style: italic;
@@ -151,8 +151,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Semibold';
 	src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Semibold.woff') format('woff'),
-		url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+	url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+	url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
 	font-weight: 600;
 	font-display: swap;
 	font-style: normal;
@@ -165,8 +165,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-SemiboldItalic';
 	src: url('../fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
-		url('../fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
+	url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
+	url('../fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
 	font-weight: 600;
 	font-display: swap;
 	font-style: italic;
@@ -179,8 +179,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-Bold';
 	src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
-		url('../fonts/GeneralSans-Bold.woff') format('woff'),
-		url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+	url('../fonts/GeneralSans-Bold.woff') format('woff'),
+	url('../fonts/GeneralSans-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-display: swap;
 	font-style: normal;
@@ -193,8 +193,8 @@ body {
 @font-face {
 	font-family: 'GeneralSans-BoldItalic';
 	src: url('../fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
-		url('../fonts/GeneralSans-BoldItalic.woff') format('woff'),
-		url('../fonts/GeneralSans-BoldItalic.ttf') format('truetype');
+	url('../fonts/GeneralSans-BoldItalic.woff') format('woff'),
+	url('../fonts/GeneralSans-BoldItalic.ttf') format('truetype');
 	font-weight: 700;
 	font-display: swap;
 	font-style: italic;
@@ -230,5 +230,58 @@ body {
 	}
 	100% {
 		opacity: 0.5;
+	}
+}
+.lds-blur {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 1111111;
+	backdrop-filter: blur(4px);
+}
+
+.lds-facebook {
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 1111111;
+	/*backdrop-filter: blur(4px);*/
+}
+.lds-facebook div {
+	display: inline-block;
+	position: absolute;
+	left: 8px;
+	width: 16px;
+	background: #fff;
+	animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+	left: 8px;
+	animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+	left: 32px;
+	animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+	left: 56px;
+	animation-delay: 0s;
+}
+@keyframes lds-facebook {
+	0% {
+		top: 8px;
+		height: 64px;
+	}
+	50%, 100% {
+		top: 24px;
+		height: 32px;
 	}
 }

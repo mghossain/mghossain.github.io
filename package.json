@@ -4,9 +4,11 @@
 	"private": true,
 	"homepage": "https://mghossain.github.io",
 	"dependencies": {
+		"@emailjs/browser": "^3.11.0",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
+		"emailjs": "^4.0.1",
 		"framer-motion": "4.1.17",
 		"gh-pages": "^5.0.0",
 		"postcss-cli": "^10.1.0",
@@ -22,9 +24,9 @@
 	},
 	"scripts": {
 		"start": "react-scripts --openssl-legacy-provider start",
-		"predeploy" : "yarn run build",
-		"deploy" : "gh-pages -d build",
-    	"build": "yarn run react-scripts build",
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build",
+		"build": "yarn run react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
