@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import Button from './reusable/Button';
+import {useState} from "react";
+import emailJs from "@emailjs/browser";
 
 const selectOptions = [
 	'Web Application',
@@ -9,7 +11,46 @@ const selectOptions = [
 	'Branding',
 ];
 
-const HireMeModal = ({ onClose, onRequest }) => {
+const HireMeModal = ({ onClose }) => {
+	const [isLoading, setIsLoading] = useState(false);
+	const [sentSuccess, setSentSuccess] = useState(false);
+	const [sentError, setSentError] = useState(false);
+	const [formData, setFormData] = useState({
+		name: '',
+		email: '',
+		subject: '',
+		message: '',
+	});
+	function handleChange(event) {
+		const {name, value} = event.target
+		setFormData(prevFormData => {
+			return {
+				...prevFormData,
+				[name]: value
+			}
+		})
+	}
+	const handleSubmit = event => {
+		event.preventDefault()
+
+		setIsLoading(true)
+		emailJs
+			.send("service_q7mkbq5","template_fai1d53", formData, "RgP1ehTIYroNsVAcR")
+			.then((response) =>
+			{
+				setSentSuccess(true)
+				setSentError(false)
+				console.log(response)
+				setIsLoading(false)
+			})
+			.catch((err) => {
+				setSentError(true)
+				setSentSuccess(false)
+				console.log(err)
+				setIsLoading(false)
+			});
+	};
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -19,6 +60,15 @@ const HireMeModal = ({ onClose, onRequest }) => {
 		>
 			{/* Modal Backdrop */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
+			{ isLoading &&
+				<div className='lds-blur'>
+					<div className="lds-facebook dark:lds-facebook-dark">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			}
 
 			{/* Modal Content */}
 			<main className="flex flex-col items-center justify-center h-full w-full">
@@ -37,9 +87,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 						</div>
 						<div className="modal-body p-5 w-full h-full">
 							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+								onSubmit={handleSubmit}
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -48,9 +96,10 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										id="name"
 										name="name"
 										type="text"
-										required=""
+										required
 										placeholder="Name"
 										aria-label="Name"
+										onChange={handleChange}
 									/>
 								</div>
 								<div className="mt-6">
@@ -59,29 +108,23 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										id="email"
 										name="email"
 										type="text"
-										required=""
+										required
 										placeholder="Email"
 										aria-label="Email"
+										onChange={handleChange}
 									/>
 								</div>
 								<div className="mt-6">
-									<select
+									<input
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
 										name="subject"
-										type="text"
-										required=""
-										aria-label="Project Category"
-									>
-										{selectOptions.map((option) => (
-											<option
-												className="text-normal sm:text-md"
-												key={option}
-											>
-												{option}
-											</option>
-										))}
-									</select>
+										type="subject"
+										required
+										placeholder="Subject"
+										aria-label="Subject"
+										onChange={handleChange}
+									/>
 								</div>
 
 								<div className="mt-6">
@@ -93,26 +136,26 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										rows="6"
 										aria-label="Details"
 										placeholder="Project description"
+										onChange={handleChange}
 									></textarea>
 								</div>
+								{ (sentSuccess && !sentError) &&
+									<div className='w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md'>
+										Great news! You've successfully sent your email and you can expect to hear back from us soon.
+									</div> }
+								{ (sentError && !sentSuccess) &&
+									<div className='w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md'>
+										Sorry, the email failed to send. Please reach out to me via email or phone.
+									</div> }
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<span
-										onClick={onClose}
-										type="submit"
-										className="px-4
-											sm:px-6
-											py-2
-											sm:py-2.5
-											text-white
-											bg-indigo-500
-											hover:bg-indigo-600
-											rounded-md
-											focus:ring-1 focus:ring-indigo-900 duration-500"
-										aria-label="Submit Request"
-									>
-										<Button title="Send Request" />
-									</span>
+									<div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500">
+										<Button
+											title="Send Message"
+											type="submit"
+											aria-label="Send Message"
+										/>
+									</div>
 								</div>
 							</form>
 						</div>

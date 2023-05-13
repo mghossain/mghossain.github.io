@@ -241,7 +241,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	z-index: 1111111;
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(3px);
 }
 
 .lds-facebook {
@@ -253,14 +253,21 @@ body {
 	height: 100vh;
 	width: 100%;
 	z-index: 1111111;
-	/*backdrop-filter: blur(4px);*/
+}
+.dark .dark\:lds-facebook-dark div {
+	display: inline-block;
+	position: absolute;
+	left: 8px;
+	width: 16px;
+	background: white;
+	animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds-facebook div {
 	display: inline-block;
 	position: absolute;
 	left: 8px;
 	width: 16px;
-	background: #fff;
+	background: black;
 	animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds-facebook div:nth-child(1) {

@@ -200,7 +200,6 @@ const AppHeader = () => {
 				{showModal ? (
 					<HireMeModal
 						onClose={showHireMeModal}
-						onRequest={showHireMeModal}
 					/>
 				) : null}
 				{showModal ? showHireMeModal : null}

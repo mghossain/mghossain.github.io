@@ -7,14 +7,12 @@ const ContactForm = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [sentSuccess, setSentSuccess] = useState(false);
 	const [sentError, setSentError] = useState(false);
-
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		subject: '',
 		message: '',
 	});
-
 	function handleChange(event) {
 		const {name, value} = event.target
 		setFormData(prevFormData => {
@@ -24,10 +22,6 @@ const ContactForm = () => {
 			}
 		})
 	}
-	// const delay = ms => new Promise(
-	// 	resolve => setTimeout(resolve, ms)
-	// );
-
 	const handleSubmit = event => {
 		event.preventDefault()
 
@@ -44,7 +38,7 @@ const ContactForm = () => {
 			.catch((err) => {
 				setSentError(true)
 				setSentSuccess(false)
-				console.log(err, sentError)
+				console.log(err)
 				setIsLoading(false)
 			});
 	};
@@ -53,7 +47,7 @@ const ContactForm = () => {
 		<div className="w-full lg:w-1/2">
 			{ isLoading &&
 				<div className='lds-blur'>
-					<div className="lds-facebook">
+					<div className="lds-facebook dark:lds-facebook-dark">
 						<div></div>
 						<div></div>
 						<div></div>
