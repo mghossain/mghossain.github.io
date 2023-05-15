@@ -4,12 +4,12 @@ import Button from './reusable/Button';
 import {useState} from "react";
 import emailJs from "@emailjs/browser";
 
-const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
-];
+// const selectOptions = [
+// 	'Web Application',
+// 	'Mobile Application',
+// 	'UI/UX Design',
+// 	'Branding',
+// ];
 
 const HireMeModal = ({ onClose }) => {
 	const [isLoading, setIsLoading] = useState(false);
