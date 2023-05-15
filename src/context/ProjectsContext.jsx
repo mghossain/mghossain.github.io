@@ -23,6 +23,15 @@ export const ProjectsProvider = (props) => {
 	});
 
 	// Select projects by project category
+	const selectProjectsByTags = projects.filter((item) => {
+		let tags = item.ProjectHeader.tags.map((tag) => (
+			tag.charAt(0).toUpperCase() + tag.slice(1)).includes(selectProject)
+		)
+		return tags.includes(true)
+	});
+
+
+	// Select projects by project category
 	const selectProjectsByCategory = projects.filter((item) => {
 		let category =
 			item.category.charAt(0).toUpperCase() + item.category.slice(1);
@@ -39,7 +48,7 @@ export const ProjectsProvider = (props) => {
 				searchProjectsByTitle,
 				selectProject,
 				setSelectProject,
-				selectProjectsByCategory,
+				selectProjectsByTags,
 			}}
 		>
 			{props.children}

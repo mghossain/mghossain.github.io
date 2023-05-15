@@ -1,8 +1,17 @@
 const selectOptions = [
 	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Laravel',
+	'React',
+	'Tailwind',
+	'Datatables',
+	'Select2',
+	'API',
+	'MySQL',
+	'TDD',
+	'PostgreSQL',
+	'Docker',
+	'Documentation'
+
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {

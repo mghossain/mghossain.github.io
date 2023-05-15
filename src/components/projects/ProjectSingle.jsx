@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image }) => {
+const ProjectSingle = ({ title, category, image, projectHeader }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -25,9 +25,19 @@ const ProjectSingle = ({ title, category, image }) => {
 						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
 							{title}
 						</p>
-						<span className="text-lg text-ternary-dark dark:text-ternary-light">
-							{category}
-						</span>
+						{/*<span className="text-lg text-ternary-dark dark:text-ternary-light">*/}
+						{/*	{category}*/}
+						{/*</span>*/}
+						<div className="text-lg text-ternary-dark dark:text-ternary-light">
+							{projectHeader.tags.map((tag, i, row) => {
+								if (i + 1 === row.length) {
+									return tag
+								}
+
+								return tag + " - "
+							})
+							}
+						</div>
 					</div>
 				</div>
 			</Link>
