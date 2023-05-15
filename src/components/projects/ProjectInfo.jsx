@@ -90,21 +90,29 @@ const ProjectInfo = () => {
 			</div>
 
 			{/*  Single project right section */}
-			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-				<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-					{singleProjectData.ProjectInfo.ProjectDetailsHeading}
-				</p>
+			<div className='flex-row'>
 				{singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
-					return (
-						<p
-							key={details.id}
-							className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
-						>
-							{details.details}
+					return <div className="w-full text-left mt-10 mb-7 sm:mt-0">
+						<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
+							{details.heading}
 						</p>
-					);
-				})}
+						{
+							details.details.map((detail) => {
+								return (
+									<p
+										key={detail.id}
+										className="font-general-regular mb-3 text-lg text-ternary-dark dark:text-ternary-light"
+									>
+										{detail.details}
+									</p>
+								);
+							})
+						}
+					</div>
+				})
+				}
 			</div>
+
 		</div>
 	);
 };

@@ -9,7 +9,7 @@ import UIImage2 from '../images/ui-project-2.jpg';
 export const projectsData = [
 	{
 		id: 1,
-		title: 'OXO Guard Management System ',
+		title: 'OXO Guard Management System',
 		category: 'Web Application',
 		img: WebImage2,
 		ProjectHeader: {
@@ -31,13 +31,13 @@ export const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'E-Commerce Sales Insights Retrieval Platform',
+		title: 'Shopping Hive: E-Commerce Sales Insights Retrieval Platform',
 		category: 'Web Application',
 		img: UIImage1,
 		ProjectHeader: {
 			title: 'Project Management UI - From Context',
 			publishDate: 'Jul 26, 2021',
-			tags: ['React', 'Laravel', 'API', 'TDD', 'PostgreSQL', 'Docker', 'Documentation', 'Tailwind', 'Web Application'],
+			tags: ['React', 'Laravel', 'API', 'TDD', 'MySQL', 'Docker', 'Documentation', 'Tailwind', 'Web Application'],
 		},
 	},
 	{
@@ -48,29 +48,7 @@ export const projectsData = [
 		ProjectHeader: {
 			title: 'Project Management UI - From Context',
 			publishDate: 'Jul 26, 2021',
-			tags: ['C#', '.NET', 'SQLite'],
+			tags: ['C#', '.NET', 'SQLite', 'Desktop Application'],
 		},
-	},
-	{
-		id: 5,
-		title: 'React Social App',
-		category: 'Mobile Application',
-		img: MobileImage1,
-		ProjectHeader: {
-			title: 'Project Management UI - From Context',
-			publishDate: 'Jul 26, 2021',
-			tags: ['UI / Frontend', 'hello'],
-		},
-	},
-	{
-		id: 6,
-		title: 'Apple Design System',
-		category: 'Web Application',
-		img: UIImage2,
-		ProjectHeader: {
-			title: 'Project Management UI - From Context',
-			publishDate: 'Jul 26, 2021',
-			tags: ['UI / Frontend', 'hello'],
-		},
-	},
+	}
 ];

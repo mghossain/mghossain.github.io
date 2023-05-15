@@ -1,5 +1,6 @@
 const selectOptions = [
 	'Web Application',
+	'Desktop Application',
 	'Laravel',
 	'React',
 	'Tailwind',
@@ -7,8 +8,9 @@ const selectOptions = [
 	'Select2',
 	'API',
 	'MySQL',
-	'TDD',
 	'PostgreSQL',
+	'SQLite',
+	'TDD',
 	'Docker',
 	'Documentation'
 

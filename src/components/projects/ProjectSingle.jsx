@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image, projectHeader }) => {
+const ProjectSingle = ({ id, title, category, image, projectHeader }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -12,7 +12,7 @@ const ProjectSingle = ({ title, category, image, projectHeader }) => {
 				delay: 0.15,
 			}}
 		>
-			<Link to="/projects/single-project" aria-label="Single Project">
+			<Link to={`/projects/${id}`} aria-label="Single Project">
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
 						<img
@@ -29,13 +29,9 @@ const ProjectSingle = ({ title, category, image, projectHeader }) => {
 						{/*	{category}*/}
 						{/*</span>*/}
 						<div className="text-lg text-ternary-dark dark:text-ternary-light">
-							{projectHeader.tags.map((tag, i, row) => {
-								if (i + 1 === row.length) {
-									return tag
-								}
-
-								return tag + " - "
-							})
+							{projectHeader.tags.join(
+									' - '
+								)
 							}
 						</div>
 					</div>
