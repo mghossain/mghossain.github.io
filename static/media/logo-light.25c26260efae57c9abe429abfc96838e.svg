@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg x="0px" y="0px"
+	 viewBox="0 0 1288.8 420.1"
+	 style="enable-background:new 0 0 1288.8 344.1;"
+	 xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<path class="st0" d="M97.9,7.5h150.5c49.2,0,89.1,39.9,89.1,89.1v150.5c0,49.2-39.9,89.1-89.1,89.1H97.9 c-49.2,0-89.1-39.9-89.1-89.1V96.6C8.8,47.4,48.7,7.5,97.9,7.5z" transform="matrix(1, 0, 0, 1, 24.436028, 78.150002)" style="fill: rgb(244, 244, 244); stroke: rgb(244, 244, 244); stroke-miterlimit: 10; stroke-width: 2px;"/>
+	<g class="st2" transform="matrix(1, 0, 0, 1, 24.436028, 78.150002)">
+		<text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 58px; font-weight: 700; white-space: pre;" transform="matrix(2.927601, 0, 0, 3.884873, -974.593994, 151.918442)" x="468.199" y="29.215">Developer</text>
+	</g>
+	<text style="fill: rgb(78, 92, 166); font-family: Dubai; font-size: 10.9px; font-weight: 700; white-space: pre;" transform="matrix(32.027794, -0.095782, 0.078801, 26.349749, -14625.393555, -1108.073364)" x="458.14" y="56.589">M</text>
+</svg>
