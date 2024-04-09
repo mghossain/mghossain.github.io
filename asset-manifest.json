@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2bf1e213.css",
-    "main.js": "/static/js/main.5a1f9b57.js",
-    "static/js/292.61b40cec.chunk.js": "/static/js/292.61b40cec.chunk.js",
+    "main.js": "/static/js/main.90d6cf9c.js",
+    "static/js/292.5f68336f.chunk.js": "/static/js/292.5f68336f.chunk.js",
     "static/js/705.b43e8b33.chunk.js": "/static/js/705.b43e8b33.chunk.js",
-    "static/js/743.7414c7f7.chunk.js": "/static/js/743.7414c7f7.chunk.js",
-    "static/js/405.77a681c2.chunk.js": "/static/js/405.77a681c2.chunk.js",
-    "static/js/406.2b3f8280.chunk.js": "/static/js/406.2b3f8280.chunk.js",
+    "static/js/743.3be8052a.chunk.js": "/static/js/743.3be8052a.chunk.js",
+    "static/js/405.fce0bf82.chunk.js": "/static/js/405.fce0bf82.chunk.js",
+    "static/js/841.98e209e9.chunk.js": "/static/js/841.98e209e9.chunk.js",
     "static/js/787.871b41c3.chunk.js": "/static/js/787.871b41c3.chunk.js",
+    "static/media/Lexzur-Virtual-Backrgound.jpg": "/static/media/Lexzur-Virtual-Backrgound.7203ff6b912343b99218.jpg",
+    "static/media/Lexzur-core.jpg": "/static/media/Lexzur-core.dcba4e001d5c1d13b430.jpg",
+    "static/media/Lexzur-contra.jpg": "/static/media/Lexzur-contra.79a2c607c8ac5a6e869e.jpg",
     "static/media/GeneralSans-VariableItalic.ttf": "/static/media/GeneralSans-VariableItalic.37a2c9e4ec944dec5059.ttf",
     "static/media/GeneralSans-Variable.ttf": "/static/media/GeneralSans-Variable.d7facbbe2ed9ae4aae49.ttf",
     "static/media/web-project-2.jpg": "/static/media/web-project-2.f01087020cc02a54e124.jpg",
@@ -63,16 +66,16 @@
     "static/media/logo-dark.svg": "/static/media/logo-dark.2ab62b70da6d8274532d77b3dccdf5dc.svg",
     "index.html": "/index.html",
     "main.2bf1e213.css.map": "/static/css/main.2bf1e213.css.map",
-    "main.5a1f9b57.js.map": "/static/js/main.5a1f9b57.js.map",
-    "292.61b40cec.chunk.js.map": "/static/js/292.61b40cec.chunk.js.map",
+    "main.90d6cf9c.js.map": "/static/js/main.90d6cf9c.js.map",
+    "292.5f68336f.chunk.js.map": "/static/js/292.5f68336f.chunk.js.map",
     "705.b43e8b33.chunk.js.map": "/static/js/705.b43e8b33.chunk.js.map",
-    "743.7414c7f7.chunk.js.map": "/static/js/743.7414c7f7.chunk.js.map",
-    "405.77a681c2.chunk.js.map": "/static/js/405.77a681c2.chunk.js.map",
-    "406.2b3f8280.chunk.js.map": "/static/js/406.2b3f8280.chunk.js.map",
+    "743.3be8052a.chunk.js.map": "/static/js/743.3be8052a.chunk.js.map",
+    "405.fce0bf82.chunk.js.map": "/static/js/405.fce0bf82.chunk.js.map",
+    "841.98e209e9.chunk.js.map": "/static/js/841.98e209e9.chunk.js.map",
     "787.871b41c3.chunk.js.map": "/static/js/787.871b41c3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2bf1e213.css",
-    "static/js/main.5a1f9b57.js"
+    "static/js/main.90d6cf9c.js"
   ]
 }
