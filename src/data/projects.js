@@ -5,10 +5,22 @@ import MobileImage1 from '../images/mobile-project-1.jpg';
 import MobileImage2 from '../images/mobile-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
 import UIImage2 from '../images/ui-project-2.jpg';
+import LexzurLogo from '../images/Lexzur-Virtual-Backrgound.jpg';
 
 export const projectsData = [
 	{
 		id: 1,
+		title: 'Software Engineer at Lexzur',
+		category: 'Web Application',
+		img: LexzurLogo,
+		ProjectHeader: {
+			title: 'Project Management UI - From Context',
+			publishDate: 'Jul 26, 2021',
+			tags: ['Laravel', 'codeigniter', 'Web Application', 'MySQL', 'MSSQL', 'API', 'Messenger', 'Marketplace'],
+		},
+	},
+	{
+		id: 2,
 		title: 'OXO Guard Management System',
 		category: 'Web Application',
 		img: WebImage2,
@@ -19,7 +31,7 @@ export const projectsData = [
 		},
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Customer Onboarding and Verification System',
 		category: 'Web Application',
 		img: MobileImage2,
@@ -30,7 +42,7 @@ export const projectsData = [
 		},
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Shopping Hive: E-Commerce Sales Insights Retrieval Platform',
 		category: 'Web Application',
 		img: UIImage1,
@@ -41,7 +53,7 @@ export const projectsData = [
 		},
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Developing Features in a Desktop App',
 		category: 'Desktop Application',
 		img: WebImage1,

@@ -5,6 +5,10 @@ import Image3 from '../images/mobile-project-2.jpg';
 import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
+import Image1Lexzur from '../images/Lexzur-Virtual-Backrgound.jpg';
+import Image2Lexzur from '../images/Lexzur-core.jpg';
+import Image3Lexzur from '../images/Lexzur-contra.jpg';
+
 // Import icons
 import {
 	FiFacebook,
@@ -18,8 +22,189 @@ export const singleProjectData = [
 	{
 		id: 1,
 		ProjectHeader: {
+			title: 'Lexzur',
+			publishDate: 'Jun 2023 - Present',
+			tags: ['Laravel', 'codeigniter', 'Web Application', 'MySQL', 'MSSQL', 'API', 'Messenger', 'Marketplace'],
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: 'Kabul Project Management UI',
+				img: Image1Lexzur,
+			},
+			{
+				id: 2,
+				title: 'Kabul Project Management UI',
+				img: Image2Lexzur,
+			},
+			{
+				id: 3,
+				title: 'Kabul Project Management UI',
+				img: Image3Lexzur,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Client',
+			CompanyInfo: [
+				{
+					id: 1,
+					title: 'Name',
+					details: 'Lexzur',
+				},
+				{
+					id: 2,
+					title: 'Services',
+					details: 'Legal Practice Management Solution - Agile Contract Lifecycle Management (CLM) & Document Automation',
+				},
+				{
+					id: 3,
+					title: 'Website',
+					details: 'https://www.lexzur.com/',
+				},
+				{
+					id: 4,
+					title: 'Location',
+					details: '954 Lexington Ave, New York, NY 10021, USA',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'Elevate Your Operations with an All-in-One Legal Tech Solution.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: ['Laravel', 'PHP', 'Web Application', 'MSSQL', 'Javascript', 'API', 'MySQL'],
+				},
+			],
+			ProjectDetails: [
+				{
+					heading: 'Milestone: Core App',
+					details: [
+						{
+							id: 1,
+							details:
+								'•\tMigrate CodeIgniter APIs to Laravel.'
+						},{
+							id: 2,
+							details:
+								'•\tDeveloping and enhancing Laravel APIs.',
+						},{
+							id: 3,
+							details:
+								'•\tDevelop Document Notes feature (APIs, DB structure, notifications…).',
+						},
+					]
+				},
+				{
+					heading: 'Project: Marketplace',
+					details: [
+						{
+							id: 1,
+							details:
+								'•\tAdd Buy Now Feature.'
+						},{
+							id: 2,
+							details:
+								'•\tImplement Localization Feature for Retrieving Translations.'
+						},{
+							id: 3,
+							details:
+								'•\tImprove Organization of Uploaded Files.'
+						},
+					]
+				},
+				{
+					heading: 'Project: Messenger App',
+					details: [
+						{
+							id: 1,
+							details:
+								'•\tDevelop fully functioning APIs for the messenger app.'
+						},{
+							id: 2,
+							details:
+								'•\tUtilized multitenancy architecture with a DB per tenant approach.'
+						},{
+							id: 3,
+							details:
+								'•\tImplement a user customizable garbage collection for the messages.'
+						},
+					]
+				},
+				{
+					heading: 'Project: Integrations',
+					details: [
+						{
+							id: 1,
+							details:
+								'•\tDevelop custom integrations for multiple clients.'
+						},{
+							id: 2,
+							details:
+								'•\tMeetings with the clients to achieve requirements.'
+						},
+					]
+				},
+			],
+			SocialSharingHeading: 'Share This',
+			SocialSharing: [
+				{
+					id: 1,
+					name: 'Twitter/X',
+					icon: <FiTwitter />,
+					url: 'https://twitter.com/Lexzurtech',
+				},
+				{
+					id: 3,
+					name: 'Facebook',
+					icon: <FiFacebook />,
+					url: 'https://www.facebook.com/lexzurtech',
+				},
+				{
+					id: 4,
+					name: 'LinkedIn',
+					icon: <FiLinkedin />,
+					url: 'https://www.linkedin.com/company/lexzur/',
+				},
+				{
+					id: 5,
+					name: 'Youtube',
+					icon: <FiYoutube />,
+					url: 'https://www.youtube.com/@lexzurtech',
+				},
+			],
+		},
+		RelatedProject: {
+			title: 'Related Projects',
+			Projects: [
+				{
+					id: 1,
+					title: 'Mobile UI',
+					img: Image4,
+				},
+				{
+					id: 2,
+					title: 'Web Application',
+					img: Image5,
+				},
+				{
+					id: 3,
+					title: 'UI Design',
+					img: Image6,
+				},
+				{
+					id: 4,
+					title: 'Kabul Mobile App UI',
+					img: Image3,
+				},
+			],
+		},
+	},
+	{
+		id: 2,
+		ProjectHeader: {
 			title: 'OXO Guard Management System',
-				publishDate: 'Dec 2022 - Present',
+				publishDate: 'Dec 2022 - Apr 2023',
 				tags: ['Laravel', 'Tailwind', 'Web Application', 'Datatables', 'Select2', 'API', 'MySQL'],
 		},
 		ProjectImages: [
@@ -182,7 +367,7 @@ export const singleProjectData = [
 			],
 		},
 	},
-	{id: 2,
+	{id: 3,
 		ProjectHeader: {
 			title: 'Customer Onboarding and Verification System',
 			publishDate: 'Oct 2022 – Dec 2022',
@@ -333,7 +518,7 @@ export const singleProjectData = [
 			],
 		},
 	},
-	{id: 3,
+	{id: 4,
 		ProjectHeader: {
 			title: 'Shopping Hive: E-Commerce Sales Insights Retrieval Platform',
 			publishDate: 'Feb 2023 – Mar 2023',
@@ -488,7 +673,7 @@ export const singleProjectData = [
 			],
 		},
 	},
-	{id: 4,
+	{id: 5,
 		ProjectHeader: {
 			title: 'Developing Features in a Desktop App',
 			publishDate: 'Jan 2021 – Oct 2022',
